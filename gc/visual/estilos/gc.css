@@ -1,0 +1,15 @@
+/* CSS Document */
+
+* { margin: 0; padding: 0; } 
+html,body { width: 100%; height: 100%; }
+body { text-align: center; }
+#container { width: 760px; height: 100%; text-align: left; }
+#conteudo { width: 100%; height: 100%; }
+#conteudo #icones { height: 100%; width: 100%; }
+#conteudo #icones_acao { width: 100%; }
+#icones_acao td { width: 33% }
+#icones td { width: 50%; }
+
+#cabecalho { height: 100px !important; }
+#rodape { height: 100px!important; }
+

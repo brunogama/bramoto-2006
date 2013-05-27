@@ -1,0 +1,10 @@
+		</td>
+	</tr>
+	<tr>
+		<td id="rodape">
+<%-- Rodape --%>		
+			&nbsp;
+<%-- /Rodape --%>
+		</td>
+	</tr>	
+</table>

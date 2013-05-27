@@ -1,0 +1,290 @@
+/* CSS Document */
+* { 
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font:10px Verdana, Arial, Helvetica, sans-serif;	
+	line-height: 1.5em;
+}
+html,body,#container { 
+	height: 100% !important;
+	width: 100% !important; 
+}
+
+/* Menu e navegao */
+#menu {
+	padding-top: 15px;
+	margin: 0;}
+#nav { _height: 500px; }
+#nav * { font: 9px Verdana, Arial, Helvetica, sans-serif; width: auto; margin: 0px; }
+#nav ul li { margin: 10px 0; }
+#nav ul li a { display: block; text-indent: -9999px; height: 35px; width: 160px; margin-top: -10px; }
+#nav ul li a.concessionarias { background-image: url(../imagens/spritesConcessionarias.gif); }
+#nav ul li a.concessionarias:hover { background-position: 0 -30px; }
+#nav ul li a.concessionariasSelected { background-image: url(../imagens/spritesConcessionarias.gif);background-position: 0 -71px; }
+#nav ul li a.motos { background-image: url(../imagens/spritesMotos.gif); }
+#nav ul li a.motos:hover { background-position: 0 -30px; }
+#nav ul li a.motosSelected { background-image: url(../imagens/spritesMotos.gif);background-position: 0 -71px; }
+#nav ul li a.oficina { background-image: url(../imagens/spritesOficina.gif); }
+#nav ul li a.oficina:hover { background-position: 0 -30px; }
+#nav ul li a.oficinaSelected { background-image: url(../imagens/spritesOficina.gif);background-position: 0 -71px; }
+#nav ul li a.produtos { background-image: url(../imagens/spritesProdutos.gif); }
+#nav ul li a.produtos:hover { background-position: 0 -30px; }
+#nav ul li a.produtosSelected { background-image: url(../imagens/spritesProdutos.gif);background-position: 0 -71px; }
+#nav ul li ul { margin: 10px 0 10px 20px; display: none; }
+#nav ul li ul.selected { display: block; overflow: hidden; }
+#nav ul li ul li { margin: 2px auto; }
+#nav ul li ul li a:link,#nav ul li ul li a:visited,#nav ul li ul li a:active { display: inline; text-indent: 0; color: #999;}
+#nav ul li ul li a:hover { text-decoration: underline; }	
+/* Fim Menu e navegao */
+body,#container,#conteudo,#cabecalho { color: #000; }
+body { background-color: #a12121; }
+	
+#container,#cabecalho {
+	background-image: url(../imagens/fundo_layout.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+
+#container .fundoSuperior {
+	background-image: url(../imagens/listra_fundo_topo.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 123px;
+	_background-position: 0 125px;
+	position: relative;
+}
+#container .fundoTR { background-image:url(../imagens/fundo.jpg); }
+.fundoInferior {
+	background-image: url(../imagens/listra_fundo_inferior.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+/* Cabecalho */
+#cabecalho { height: 300px; width: 10px; }
+#cabecalho_logo { padding: 10px 10px; }
+#cabecalho_nav { text-align: right; padding: 10px 15px; color: #999; }
+#cabecalho_nav a:link,#cabecalho_nav a:visited,#cabecalho_nav a:active,#cabecalho_nav a {
+	text-decoration: none;
+	color: #999;
+}
+#cabecalho_nav a:hover { text-decoration: underline; }	
+/* /Cabecalho */	
+
+#rodape {
+    background-color: #851b1b;
+	height: 63px;
+	width: 752px;
+	font: 9px Verdana;
+	color: #FFF;
+	background-image: url(../imagens/rodape_fundo_direito.jpg);
+	padding-top: 1em;
+	text-align: right;
+	}
+#rodape p { padding-right: 15px; }
+#rodape a:link,#rodape a:visited,#rodape a:active { color: #999; }
+#rodape a:hover { text-decoration: underline; }
+/* Conteudo */
+
+#conteudo {
+	height: 100%;
+	width: 578px;
+	background-image: url(../imagens/fundo_menu_direito.jpg);
+	background-repeat: no-repeat;
+	background-position: 1px 0px;
+	_background-position: 1px -3px;
+	position: relative;
+	padding: 0 20px 20px 20px;
+}
+#conteudo a:link,#conteudo a:visited,#conteudo a:active,#conteudo a {
+	text-decoration: none;
+	color: #999;
+}
+#conteudo a:hover { text-decoration: underline;	}
+
+#conteudo a.linkNulo:link,#conteudo a.linkNulo:visited,#conteudo a.linkNulo:active,#conteudo a.linkNulo:hover {
+	text-decoration: none;
+	color:#000;
+}
+
+
+#conteudo hr {
+	color: #9d2121;
+	margin: 0;
+}
+#conteudo ul {
+	list-style-type:none;
+	margin: 0 15px;
+	padding: 10px;
+}
+#conteudo li {
+	list-style-image: url(../imagens/bullet.gif);
+	list-style-type:none;
+	padding: 0 0 5px 0;
+}
+#conteudo p {
+	padding: 0;
+	margin: 5px 0px;
+}
+#conteudo p.primeiro {
+	padding: 0;
+	margin: 15px 0 0 0;
+}
+#conteudo img {
+	border: 1px solid;
+	color: #999999;
+}
+#conteudo img.gimmik {
+	border: none;
+}
+#conteudo table {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#conteudo strong,#conteudo b {
+	font-weight: bold;
+}
+/* Conteudo */
+
+
+/* Headings */
+#conteudo h3 {
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #cd3335;
+	margin: 10px 0;
+}
+h1,h2 {
+	height: 20px;
+	text-indent: -9999px;
+	width: 100%;
+}
+#conteudo h1 {
+	background-repeat:no-repeat;
+	background-position: bottom left;
+	margin: 0 0 5px 0;
+	_margin: 0 0 -10px 0;
+}	
+#conteudo h1.bemvindo { background-image: url(../imagens/h1/seja_bem_vindo.jpg); }
+#conteudo h1.pservicos { background-image: url(../imagens/h1/pre_agende_seus_servicos.jpg); }
+#conteudo h1.contato { background-image: url(../imagens/h1/contato.jpg); }
+#conteudo h1.mapa { background-image: url(../imagens/h1/mapa_do_site.jpg); }
+#conteudo h1.noticias { background-image: url(../imagens/h1/noticias.jpg); }
+
+
+#conteudo h1.concessionarias { background-image: url(../imagens/h1/concessionarias.jpg); }
+#conteudo h1.motos { background-image: url(../imagens/h1/motos.jpg); }
+#conteudo h1.oficina { background-image: url(../imagens/h1/oficina.jpg); }
+#conteudo h1.produtos { background-image: url(../imagens/h1/produtos.jpg); }
+
+
+#conteudo h2 { 
+	background-repeat:no-repeat;
+	background-position: top left;
+	margin: 5px 0 0 0;	
+	_margin: 0 0 -10px 0;
+}
+/* Concessionarias */
+#conteudo h2.santa_maria { background-image: url(../imagens/h2/bramoto_santa_maria.jpg); }
+#conteudo h2.cachoeira_do_sul { background-image: url(../imagens/h2/bramoto_cachoeira_do_sul.jpg); }
+#conteudo h2.sao_borja { background-image: url(../imagens/h2/bramoto_sao_borja.jpg); }
+#conteudo h2.santiago { background-image: url(../imagens/h2/bramoto_santiago.jpg); }
+#conteudo h2.sao_gabriel { background-image: url(../imagens/h2/bramoto_sao_gabriel.jpg); }
+#conteudo h2.seminovas { background-image: url(../imagens/h2/bramoto_seminovas.jpg); }
+#conteudo h2.itaqui { background-image: url(../imagens/h2/bramoto_itaqui.jpg); }
+#conteudo h2.cacapava { background-image: url(../imagens/h2/bramoto_cacapava.jpg); }
+#conteudo h2.rosario { background-image: url(../imagens/h2/bramoto_rosario.jpg); }
+/* /Concessionarias */
+/* Motos */
+#conteudo h2.c_100_biz { background-image: url(../imagens/h2/c_100_biz.jpg); }
+#conteudo h2.biz_125 { background-image: url(../imagens/h2/biz_125.jpg); }
+#conteudo h2.biz_125_mais { background-image: url(../imagens/h2/biz_125_mais.jpg); }
+#conteudo h2.cg_125_fan { background-image: url(../imagens/h2/cg_125_fan.jpg); }
+#conteudo h2.cg_150_job { background-image: url(../imagens/h2/cg_150_job.jpg); }
+#conteudo h2.cg_150_titan { background-image: url(../imagens/h2/cg_150_titan.jpg); }
+#conteudo h2.cg_150_sport { background-image: url(../imagens/h2/cg_150_sport.jpg); }
+#conteudo h2.nxr_150_bros { background-image: url(../imagens/h2/nxr_150_bros.jpg); }
+#conteudo h2.cbx_250_twister { background-image: url(../imagens/h2/cbx_250_twister.jpg); }
+#conteudo h2.xr_250_tornado { background-image: url(../imagens/h2/xr_250_tornado.jpg); }
+#conteudo h2.nx4_falcon { background-image: url(../imagens/h2/nx4_falcon.jpg); }
+#conteudo h2.shadow_750 { background-image: url(../imagens/h2/shadow_750.jpg); }
+#conteudo h2.cb_600f_hornet { background-image: url(../imagens/h2/cb_600f_hornet.jpg); }
+#conteudo h2.fourtrax { background-image: url(../imagens/h2/fourtrax.jpg); }
+#conteudo h2.crf_230f { background-image: url(../imagens/h2/crf_230f.jpg); }
+#conteudo h2.pop_100 { background-image: url(../imagens/h2/pop_100.jpg); }
+#conteudo h2.cbr1000rr { background-image: url(../imagens/h2/moto_cbr_1000rr.jpg); }
+#conteudo h2.cb1300 { background-image: url(../imagens/h2/cb1300.jpg); }
+
+/* /Motos */
+/* Oficina */
+#conteudo h2.assistencia_tecnica { background-image: url(../imagens/h2/assistencia_tecnica.jpg); }
+#conteudo h2.pecas { background-image: url(../imagens/h2/pecas.jpg); }
+/* /Oficina */
+/* Produtos */
+#conteudo h2.boutique { background-image: url(../imagens/h2/boutique.jpg); }
+#conteudo h2.cnh { background-image: url(../imagens/h2/cnh.jpg); }
+#conteudo h2.financiamento_bramoto { background-image: url(../imagens/h2/financiamento_bramoto.jpg); }
+/* /Produtos */
+/* Contato */
+#conteudo h2.fale_conosco { background-image: url(../imagens/h2/fale_conosco.jpg); }
+/* /Contato */
+#conteudo h2.mapa { background-image: url(../imagens/h2/nosso_site.jpg); }
+#conteudo h2.produtos { background-image: url(../../imagens/geral/h2_Produtos.jpg); }
+
+/* /Headings */
+
+/* Formularios */
+.formLinha { margin: 10px 0; clear: both;}
+label { 
+	float: left; 
+	display:block; 
+	padding-bottom: -10px;
+	vertical-align: top;
+	width: 150px;
+}
+fieldset { 
+	border: none; 
+	margin: 20px; 
+	padding: 20px; 
+	text-align: left;
+}
+.cxTxtMed { 
+	border: #555 1px Solid;
+	width: 200px; 
+	margin-bottom: 5px;
+}
+
+.cxTxtMed2digt { 
+	border: #555 1px Solid;
+	width: 40px; 
+	margin-bottom: 5px;
+}
+
+.cxTxtMed4digt { 
+	border: #555 1px Solid;
+	width: 55px; 
+	margin-bottom: 5px;
+}
+
+.btn {
+	border: Black 1px Solid;
+	background-color: White;
+	color: Black;
+	font: 10px Verdana;
+	cursor: pointer;
+}
+#formAgendamento label { display: block; width:200px; }
+#formAgendamento div.row { display: block; clear:both; }
+
+/* Formularios */
+
+#listaPrecos h3 { color: #999999 }
+#listaPrecos img { margin: 0 10px 5px 0; }
+
+/* Outros */
+.usrInv { visibility:hidden; }
+
+
+/* Noticias */
+#conteudo #noticias ul li strong { font-weight: bold; }

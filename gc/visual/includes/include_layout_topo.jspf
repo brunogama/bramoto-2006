@@ -1,0 +1,10 @@
+<table cellpadding="0" cellspacing="0" border="1" id="container">
+	<tr valign="bottom" align="right">
+		<td id="cabecalho">
+<%-- cabecalho --%>		
+			<%= request.getRemoteUser() %> | <a href="<%=request.getContextPath()%>/gc/logoff.jsp">sair</a>
+<%-- /cabecalho --%>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>

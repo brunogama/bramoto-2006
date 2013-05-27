@@ -1,0 +1,74 @@
+<script>
+ var fNames = new Array();
+ 
+ fNames['fName'] = "Nome";
+ fNames['fFirstName'] = "Primeiro Nome";
+ fNames['fLastName'] = "Último Nome";
+ fNames['fEmail'] = "E-mail";
+ fNames['fComent'] = "Comentário";
+ fNames['fDate'] = "Data";
+ fNames['fDay'] = "Dia";
+ fNames['fMonth'] = "Mês";
+ fNames['fYear'] = "Ano";
+ 
+ function usrFName( strPar ) {
+ 	return  fNames[strPar];
+ }
+ 
+function init() {	
+	var f = document.getElementById('formulario');
+	f.onsubmit = function() {
+		return checkEmptyFields();
+	}
+}
+
+function isblank(s) {
+    for(var i = 0; i < s.length; i++) {
+        var c = s.charAt(i);
+        if ((c != ' ') && (c != '\n') && (c != '\t')) return false;
+    }
+    return true;
+}
+
+function checkEmptyFields() {
+	var f = document.getElementById('formulario');
+	var j =	f.length;
+	var fEInvalid = new Array();
+	var fEInvalidCount = 0;
+	
+	for ( var i=0;i<j;i++ ) {
+		var fE = f.elements[i];
+		if ( (fE.type == "text") || (fE.type == "textarea") ) {
+			if ( (fE.value == "") || ( fE.value== null ) || isblank(fE.value) ) {
+				fEInvalid[fEInvalidCount] = i;
+				fEInvalidCount++;
+			}
+		}
+	}
+	if (fEInvalid.length > 0) {
+		var msg ="Os campos abaixo devem ser preenchidos:";
+		for ( var i=0;i<fEInvalid.length;i++ ) {
+			if ( fEInvalid[i] != "undefined" ) {
+				msg += "\n"+usrFName(f.elements[fEInvalid[i]].name);
+				
+			}			
+		}
+		alert(msg);
+		return false;
+	} else {
+		return true;
+	}
+}
+</script>
+
+<FORM id="formulario">
+Nome: <INPUT TYPE=text NAME="fFirstName"><br />
+Sobrenome: <INPUT TYPE=text NAME="fLastName"><BR>
+Comentário:<BR><TEXTAREA NAME="fComent" ROWS=4 COLS=40></TEXTAREA><BR>
+E-mail: <INPUT TYPE=text NAME="fEmail"><BR>
+<INPUT TYPE=submit>
+</FORM>
+
+<script>
+init();
+</script>

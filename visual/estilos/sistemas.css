@@ -1,0 +1,97 @@
+/* CSS Document */
+
+* { margin: 0; padding: 0; text-decoration: none; list-style: none; }
+
+html,body { 
+	height: 100%; 
+	width: 100%; 
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	color:  #000;
+	line-height: 1.5em;
+
+	word-spacing: 0.2em;
+}
+
+#cabecalho,#conteudo,#rodape {
+	width: 85%;
+	margin: 0 auto;
+}
+
+/* Inicio cabecalho */
+#cabecalho { height: 50px; }
+/* Fim cabecalho */
+
+/* Inicio conteudo */
+h1,#conteudo h1,#conteudo h2,#conteudo h3,#conteudo #principal h1,#conteudo #principal h2,#conteudo #principal h3 {
+	margin: 5px 0;
+	font: 16px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#conteudo,#conteudo #nav,#conteudo #principal {
+	height: 90%;
+}
+#conteudo #nav { 
+	float: left;
+	width: 150px;
+}
+#conteudo #nav div { margin: 10px 0; padding 10px 0; }
+#conteudo #principal { 
+	clear: right; 
+	margin-left: 10px;
+}
+#conteudo #principal table {
+	width: 85%;
+	margin: 10px auto;
+}
+#conteudo #principal table tr th {
+	text-align: left; 
+	color: #FFF; 
+	background: #db214c; 
+	padding: 2px 10px;
+}
+#conteudo #principal table tr th.data {
+	width: 145px;
+}
+#conteudo #principal table tr th.chkbox {
+	width: 20px;
+}
+#conteudo #principal table tr th{
+	text-align: left;
+}
+
+#conteudo #principal table tr td { 
+	border-bottom:1px solid #db214c; 
+	padding: 2px 10px;
+}
+#conteudo form,#conteudo #principal form {	
+	margin: 20px auto;
+}
+form label { 
+	display: block; 
+	font-weight: bold;
+}
+form input, form textarea{
+	margin-bottom: 10px;
+}
+form input.txt,form textarea.txt {
+	width: 250px;
+	border: 1px solid #999;
+}
+
+form input.btn {
+	border: 1px solid #999;
+	font: 11px bold Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	background: #fff;
+	padding: 1px 3px;
+	cursor: pointer;
+}
+
+/* Fim conteudo */
+
+/* Inicio rodape */
+#rodape hr { margin: 10px 0; clear:both; } 
+#rodape ul { margin: 10px auto; }
+#rodape ul li { display: inline; border-right: 1px solid #000; padding: 5px 10px; }
+#rodape ul li.semBarra { border-right: none; }
+/* Fim rodape */

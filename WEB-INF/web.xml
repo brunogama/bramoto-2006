@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <display-name>Bramoto a Maior Consessionaria Honda do RS</display-name>
+
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Sistema de administração de conteúdo</web-resource-name>
+			<url-pattern>/sistemas/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Administrador</role-name>
+			<role-name>Usuário</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-role>
+		<description>A role do administrador do sistema</description>
+		<role-name>Administrador</role-name>
+	</security-role>
+	<security-role>
+		<description>A role de usuário avançado</description>
+		<role-name>Usuário</role-name>
+	</security-role>	
+			
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>Login para gestão de conteúdo do site.</realm-name>
+		<form-login-config>
+			<form-login-page>/sistemas/login.jsp</form-login-page>
+			<form-error-page>/sistemas/loginInvalido.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	
+	<!-- Bibliotecas de tags -->
+	<taglib id="TagLibRev_JSTL_fmt">
+		<taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+		<taglib-location>/WEB-INF/tld/fmt.tld</taglib-location>
+	</taglib>
+	
+	<taglib id="TagLibRev_JSTL_fmt_rt">
+		<taglib-uri>http://java.sun.com/jstl/fmt_rt</taglib-uri>
+		<taglib-location>/WEB-INF/tld/fmt-rt.tld</taglib-location>
+	</taglib>
+	
+	<taglib id="TagLibRev_JSTL_core">
+		<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+		<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+	</taglib>
+	
+	<taglib id="TagLibRev_JSTL_core_rt">
+		<taglib-uri>http://java.sun.com/jstl/core_rt</taglib-uri>
+		<taglib-location>/WEB-INF/tld/c-rt.tld</taglib-location>
+	</taglib><!-- /Bibliotecas de tags -->
+</web-app>
